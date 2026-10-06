@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Seelamneni Lavanya - Computer Science AIML Student Portfolio">
+
+    <title>Seelamneni Lavanya | Portfolio</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: "Inter", sans-serif;
+
+            background: #000000;
+
+            color: #ffffff;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+        }
+
+
+        a {
+            text-decoration: none;
+
+            color: inherit;
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        header {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(0, 0, 0, 0.93);
+
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid #1f1f1f;
+        }
+
+
+        nav {
+            max-width: 1100px;
+
+            height: 70px;
+
+            margin: auto;
+
+            padding: 0 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        .logo {
+            font-size: 26px;
+
+            font-weight: 800;
+
+            color: #3b82f6;
+        }
+
+
+        .logo span {
+            color: #ffffff;
+        }
+
+
+        .nav-links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 26px;
+        }
+
+
+        .nav-links a {
+            font-size: 13px;
+
+            font-weight: 600;
+
+            color: #d4d4d8;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: #3b82f6;
+        }
+
+
+        .menu-btn {
+            display: none;
+
+            font-size: 27px;
+
+            color: #ffffff;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 105px 25px 70px;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(32, 36, 125, 0.30),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(37, 99, 235, 0.12),
+                    transparent 25%
+                ),
+
+                #000000;
+        }
+
+
+        .hero-container {
+            max-width: 1100px;
+
+            width: 100%;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1.15fr 0.85fr;
+
+            align-items: center;
+
+            gap: 45px;
+        }
+
+
+        .hero-content h4 {
+            color: #3b82f6;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+
+            letter-spacing: 1px;
+        }
+
+
+        .hero-content h1 {
+            font-size: 52px;
+
+            line-height: 1.08;
+
+            font-weight: 800;
+
+            color: #ffffff;
+
+            margin-bottom: 20px;
+
+            max-width: 720px;
+        }
+
+
+        .hero-content h1 span {
+            color: #3b82f6;
+        }
+
+
+        .hero-content p {
+            max-width: 650px;
+
+            color: #a1a1aa;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+
+            margin-bottom: 28px;
+        }
+
+
+        /* =====================================================
+           HERO BUTTONS
+        ===================================================== */
+
+        .hero-buttons {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 21px;
+
+            border-radius: 7px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .btn-primary {
+            background: #20247d;
+
+            color: #ffffff;
+        }
+
+
+        .btn-primary:hover {
+            background: #292da0;
+
+            transform: translateY(-3px);
+        }
+
+
+        .btn-outline {
+            border: 1px solid #3b82f6;
+
+            color: #ffffff;
+
+            background: transparent;
+        }
+
+
+        .btn-outline:hover {
+            background: #20247d;
+
+            border-color: #20247d;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           HERO PROFILE CARD
+        ===================================================== */
+
+        .hero-card {
+            background: #0d0d0d;
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            border: 1px solid #27272a;
+
+            box-shadow:
+                0 20px 60px
+                rgba(0, 0, 0, 0.5);
+
+            max-width: 390px;
+
+            width: 100%;
+
+            margin-left: auto;
+        }
+
+
+        /* =====================================================
+           PROFILE IMAGE
+        ===================================================== */
+
+        .profile-circle {
+            width: 160px;
+
+            height: 160px;
+
+            margin: auto;
+
+            border-radius: 50%;
+
+            overflow: hidden;
+
+            border: 4px solid #20247d;
+
+            background: #0d0d0d;
+
+            box-shadow:
+
+                0 0 0 6px
+                rgba(32, 36, 125, 0.15),
+
+                0 15px 40px
+                rgba(0, 0, 0, 0.5);
+        }
+
+
+        .profile-circle img {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            display: block;
+        }
+
+
+        .hero-card h3 {
+            text-align: center;
+
+            margin-top: 18px;
+
+            font-size: 21px;
+
+            color: #ffffff;
+        }
+
+
+        .hero-card > p {
+            text-align: center;
+
+            color: #a1a1aa;
+
+            margin-top: 5px;
+
+            font-size: 13px;
+        }
+
+
+        .quick-info {
+            margin-top: 22px;
+
+            border-top: 1px solid #27272a;
+
+            padding-top: 18px;
+        }
+
+
+        .quick-info div {
+            display: flex;
+
+            justify-content: space-between;
+
+            margin-bottom: 9px;
+
+            font-size: 12px;
+        }
+
+
+        .quick-info span:first-child {
+            color: #71717a;
+        }
+
+
+        .quick-info span:last-child {
+            font-weight: 600;
+
+            color: #ffffff;
+        }
+
+
+        /* =====================================================
+           COMMON SECTION
+        ===================================================== */
+
+        section {
+            padding: 85px 25px;
+
+            background: #000000;
+        }
+
+
+        .container {
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+
+        .section-title h2 {
+            font-size: 32px;
+
+            font-weight: 800;
+
+            color: #ffffff;
+
+            letter-spacing: 0.5px;
+        }
+
+
+        .section-title p {
+            color: #a1a1aa;
+
+            margin-top: 7px;
+
+            font-size: 13px;
+        }
+
+
+        .section-title::after {
+            content: "";
+
+            display: block;
+
+            width: 55px;
+
+            height: 4px;
+
+            background: #00aeef;
+
+            border-radius: 10px;
+
+            margin: 14px auto;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 25px;
+        }
+
+
+        .about-card {
+            padding: 28px;
+
+            background: #0d0d0d;
+
+            border: 1px solid #27272a;
+
+            border-radius: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        .about-card:hover {
+            border-color: #20247d;
+
+            transform: translateY(-4px);
+        }
+
+
+        .about-card h3 {
+            font-size: 19px;
+
+            margin-bottom: 14px;
+
+            color: #ffffff;
+        }
+
+
+        .about-card p {
+            color: #a1a1aa;
+
+            font-size: 13px;
+        }
+
+
+        .education-item {
+            border-left: 3px solid #20247d;
+
+            padding-left: 17px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .education-item h4 {
+            font-size: 14px;
+
+            color: #ffffff;
+        }
+
+
+        .education-item p {
+            font-size: 12px;
+
+            margin-top: 3px;
+
+            color: #a1a1aa;
+        }
+
+
+        /* =====================================================
+           TECHNICAL SKILLS
+        ===================================================== */
+
+        .skills-container {
+            max-width: 1050px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 16px;
+        }
+
+
+        .skill-category {
+            display: contents;
+        }
+
+
+        .skill-list {
+            display: contents;
+        }
+
+
+        .skill-list span {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 14px 24px;
+
+            background: #20247d;
+
+            color: #ffffff;
+
+            border-radius: 40px;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            border: none;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .skill-list span:hover {
+            background: #292da0;
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 8px 25px
+                rgba(32, 36, 125, 0.5);
+        }
+
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
+
+        .projects-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .project-card {
+            padding: 28px;
+
+            background: #0d0d0d;
+
+            border: 1px solid #27272a;
+
+            border-radius: 15px;
+
+            transition: 0.3s;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .project-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 4px;
+
+            height: 100%;
+
+            background: #20247d;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-6px);
+
+            border-color: #20247d;
+
+            box-shadow:
+                0 20px 40px
+                rgba(0, 0, 0, 0.45);
+        }
+
+
+        .project-card h3 {
+            font-size: 19px;
+
+            margin-bottom: 12px;
+
+            padding-left: 5px;
+
+            color: #ffffff;
+        }
+
+
+        .project-card p {
+            color: #a1a1aa;
+
+            font-size: 13px;
+
+            margin-bottom: 14px;
+        }
+
+
+        .project-card ul {
+            padding-left: 20px;
+
+            list-style: disc;
+
+            color: #a1a1aa;
+
+            font-size: 12px;
+        }
+
+
+        .project-card li {
+            margin-bottom: 8px;
+        }
+
+
+        .tech-stack {
+            margin-top: 19px;
+
+            display: flex;
+
+            gap: 7px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .tech {
+            background: #20247d;
+
+            color: #ffffff;
+
+            padding: 6px 10px;
+
+            border-radius: 5px;
+
+            font-size: 9px;
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           EXPERIENCE
+        ===================================================== */
+
+        .experience-card {
+            background: #0d0d0d;
+
+            padding: 28px;
+
+            border-radius: 15px;
+
+            border: 1px solid #27272a;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            transition: 0.3s;
+        }
+
+
+        .experience-card:hover {
+            border-color: #20247d;
+        }
+
+
+        .experience-card h3 {
+            font-size: 19px;
+
+            color: #ffffff;
+        }
+
+
+        .company {
+            color: #3b82f6;
+
+            font-weight: 600;
+
+            font-size: 13px;
+
+            margin-top: 4px;
+        }
+
+
+        .experience-card ul {
+            margin-top: 18px;
+
+            padding-left: 20px;
+
+            list-style: disc;
+
+            color: #a1a1aa;
+
+            font-size: 13px;
+        }
+
+
+        .experience-card li {
+            margin-bottom: 7px;
+        }
+
+
+        /* =====================================================
+           CERTIFICATIONS
+        ===================================================== */
+
+        .cert-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+
+        .cert-card {
+            padding: 23px;
+
+            background: #0d0d0d;
+
+            border: 1px solid #27272a;
+
+            border-radius: 13px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 17px;
+
+            transition: 0.3s;
+        }
+
+
+        .cert-card:hover {
+            transform: translateY(-4px);
+
+            border-color: #20247d;
+        }
+
+
+        .cert-icon {
+            width: 43px;
+
+            height: 43px;
+
+            flex-shrink: 0;
+
+            border-radius: 8px;
+
+            background: #20247d;
+
+            color: #ffffff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 10px;
+
+            font-weight: 800;
+        }
+
+
+        .cert-card h4 {
+            font-size: 13px;
+
+            color: #ffffff;
+        }
+
+
+        .cert-card p {
+            color: #a1a1aa;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-box {
+            max-width: 750px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .contact-box > p {
+            color: #a1a1aa;
+
+            font-size: 13px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .contact-links {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 11px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .contact-link {
+            padding: 11px 20px;
+
+            border: 1px solid #3f3f46;
+
+            border-radius: 7px;
+
+            color: #ffffff;
+
+            transition: 0.3s;
+
+            font-size: 12px;
+        }
+
+
+        .contact-link:hover {
+            background: #20247d;
+
+            border-color: #20247d;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #050505;
+
+            color: #71717a;
+
+            text-align: center;
+
+            padding: 20px;
+
+            font-size: 11px;
+
+            border-top: 1px solid #1f1f1f;
+        }
+
+
+        /* =====================================================
+           TOP BUTTON
+        ===================================================== */
+
+        #topBtn {
+            position: fixed;
+
+            right: 22px;
+
+            bottom: 22px;
+
+            width: 43px;
+
+            height: 43px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #20247d;
+
+            color: #ffffff;
+
+            cursor: pointer;
+
+            display: none;
+
+            font-size: 17px;
+
+            z-index: 999;
+
+            transition: 0.3s;
+        }
+
+
+        #topBtn:hover {
+            background: #292da0;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 950px) {
+
+            .hero-container {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+
+            .hero-content p {
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+
+            .hero-card {
+                margin: auto;
+            }
+
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 700px) {
+
+            .nav-links {
+                position: absolute;
+
+                top: 70px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: #050505;
+
+                flex-direction: column;
+
+                gap: 0;
+
+                display: none;
+
+                border-bottom: 1px solid #27272a;
+            }
+
+
+            .nav-links.active {
+                display: flex;
+            }
+
+
+            .nav-links a {
+                width: 100%;
+
+                padding: 14px 25px;
+
+                border-bottom: 1px solid #1f1f1f;
+            }
+
+
+            .menu-btn {
+                display: block;
+            }
+
+
+            .hero-content h1 {
+                font-size: 40px;
+
+                line-height: 1.1;
+            }
+
+
+            .hero-content p {
+                font-size: 14px;
+            }
+
+
+            .hero-container {
+                gap: 35px;
+            }
+
+
+            .profile-circle {
+                width: 150px;
+
+                height: 150px;
+            }
+
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            section {
+                padding: 70px 20px;
+            }
+
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+
+            .skill-list span {
+                padding: 13px 20px;
+
+                font-size: 14px;
+            }
+
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 450px) {
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+
+            .hero-card {
+                padding: 24px;
+            }
+
+
+            .profile-circle {
+                width: 140px;
+
+                height: 140px;
+            }
+
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+
+            .hero-buttons .btn {
+                width: 100%;
+
+                text-align: center;
+            }
+
+
+            .skill-list span {
+                font-size: 13px;
+
+                padding: 11px 17px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+    <nav>
+
+
+        <a href="#home"
+           class="logo">
+
+            <span>Seelamneni</span> Lavanya
+
+        </a>
+
+
+        <div class="nav-links"
+             id="navLinks">
+
+
+            <a href="#home">
+                Home
+            </a>
+
+
+            <a href="#about">
+                About
+            </a>
+
+
+            <a href="#skills">
+                Skills
+            </a>
+
+
+            <a href="#projects">
+                Projects
+            </a>
+
+
+            <a href="#experience">
+                Experience
+            </a>
+
+
+            <a href="#certifications">
+                Certifications
+            </a>
+
+
+            <a href="#contact">
+                Contact
+            </a>
+
+
+        </div>
+
+
+        <div class="menu-btn"
+             onclick="toggleMenu()">
+
+            ☰
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section class="hero"
+         id="home">
+
+
+    <div class="hero-container">
+
+
+        <!-- LEFT -->
+
+        <div class="hero-content">
+
+
+            <h4>
+                HELLO, I'M
+            </h4>
+
+
+            <h1>
+
+                Seelamneni Lavanya
+
+                <br>
+
+                <span>
+                    Computer Science(AIML) Student
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Engineering student working with Python,
+                Data Analytics, Artificial Intelligence and
+                Machine Learning. Passionate about building
+                practical solutions for real-world problems
+                while continuously learning and developing
+                technical skills.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="#projects"
+                   class="btn btn-primary">
+
+                    View My Projects
+
+                </a>
+
+
+                <a href="Lavanya_Resume (1).pdf"
+                   target="_blank"
+                   class="btn btn-outline">
+
+                    View Resume
+
+                </a>
+
+
+                <a href="Lavanya_Resume (1).pdf"
+                   download="Seelamneni_Lavanya_Resume.pdf"
+                   class="btn btn-outline">
+
+                    Download Resume
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- RIGHT PROFILE CARD -->
+
+        <div class="hero-card">
+
+
+            <div class="profile-circle">
+
+
+                <img src="pic.jpeg"
+                     alt="Seelamneni Lavanya Profile Picture">
+
+
+            </div>
+
+
+            <h3>
+                Seelamneni Lavanya
+            </h3>
+
+
+            <p>
+                Python • Data Analytics • AI/ML
+            </p>
+
+
+            <div class="quick-info">
+
+
+                <div>
+
+                    <span>
+                        Degree
+                    </span>
+
+                    <span>
+                        B.Tech CSE
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        College
+                    </span>
+
+                    <span>
+                        MRECW
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Graduation
+                    </span>
+
+                    <span>
+                        2027
+                    </span>
+
+                </div>
+
+
+              
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about"
+         id="about">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                About Me
+            </h2>
+
+
+            <p>
+                A quick introduction and educational background
+            </p>
+
+
+        </div>
+
+
+
+        <div class="about-grid">
+
+
+            <!-- CAREER OBJECTIVE -->
+
+            <div class="about-card">
+
+
+                <h3>
+                    Career Objective
+                </h3>
+
+
+                <p>
+
+                    Engineering student working with Python
+                    and AI/ML, with a strong interest in
+                    designing and scaling real-world systems.
+                    Interested in applying technical knowledge
+                    to meaningful projects while continuously
+                    learning and evolving as a developer.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- EDUCATION -->
+
+            <div class="about-card">
+
+
+                <h3>
+                    Education
+                </h3>
+
+
+                <div class="education-item">
+
+
+                    <h4>
+                        Malla Reddy Engineering College For Women
+                    </h4>
+
+
+                    <p>
+                        B.Tech in Computer Science Engineering
+                    </p>
+
+
+                    <p>
+                        2023 – 2027 
+                    </p>
+
+
+                </div>
+
+
+                <div class="education-item">
+
+
+                    <h4>
+                        Sri Nalanda Junior College
+                    </h4>
+
+
+                    <p>
+                        MPC
+                    </p>
+
+
+                    <p>
+                        2023 
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     TECHNICAL SKILLS
+===================================================== -->
+
+<section class="skills"
+         id="skills">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                TECHNICAL SKILLS
+            </h2>
+
+
+            <p>
+                Technologies and tools I work with
+            </p>
+
+
+        </div>
+
+
+
+        <div class="skills-container">
+
+
+            <div class="skill-category">
+
+
+                <div class="skill-list">
+
+
+                    <span>
+                        Python
+                    </span>
+
+
+                    <span>
+                        SQL
+                    </span>
+
+
+                    <span>
+                        Power BI
+                    </span>
+
+
+                    <span>
+                        Microsoft Excel
+                    </span>
+
+
+                    <span>
+                        MySQL
+                    </span>
+
+
+                    <span>
+                        GitHub
+                    </span>
+
+
+                    <span>
+                        VS Code
+                    </span>
+
+
+                    <span>
+                        Google Colab
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="projects"
+         id="projects">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                Projects
+            </h2>
+
+
+            <p>
+                Selected academic and technical projects
+            </p>
+
+
+        </div>
+
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+
+                <h3>
+                    Orbital Shield
+                </h3>
+
+
+                <p>
+
+                    <strong>
+                        AI-Driven Space Debris Collision
+                        Risk Prediction and Avoidance System
+                    </strong>
+
+                </p>
+
+
+                <ul>
+
+
+                    <li>
+
+                        Developed an AI-based system to predict
+                        potential collisions between satellites
+                        and space debris using Machine Learning.
+
+                    </li>
+
+
+                    <li>
+
+                        Analyzed orbital data to assess collision
+                        risks and generate real-time alerts.
+
+                    </li>
+
+
+                    <li>
+
+                        Recommended possible avoidance
+                        manoeuvres to improve satellite safety.
+
+                    </li>
+
+
+                    <li>
+
+                        Designed the solution to reduce mission
+                        failure risks and support sustainable
+                        space operations.
+
+                    </li>
+
+
+                </ul>
+
+
+                <div class="tech-stack">
+
+
+                    <span class="tech">
+                        Python
+                    </span>
+
+
+                    <span class="tech">
+                        Scikit-learn
+                    </span>
+
+
+                    <span class="tech">
+                        TensorFlow
+                    </span>
+
+
+                    <span class="tech">
+                        Pandas
+                    </span>
+
+
+                    <span class="tech">
+                        NumPy
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+
+                <h3>
+                    Alzheimer's Disease Prediction
+                </h3>
+
+
+                <p>
+
+                    <strong>
+                        Alzheimer's Disease Prediction
+                        Using Deep Learning
+                    </strong>
+
+                </p>
+
+
+                <ul>
+
+
+                    <li>
+
+                        Developed a Deep Learning-based system
+                        for early prediction of Alzheimer's
+                        disease using MRI brain images.
+
+                    </li>
+
+
+                    <li>
+
+                        Implemented a Convolutional Neural
+                        Network (CNN) to classify and detect
+                        Alzheimer's stages.
+
+                    </li>
+
+
+                    <li>
+
+                        Built a user-friendly Streamlit
+                        application for automated prediction.
+
+                    </li>
+
+
+                    <li>
+
+                        Used image processing and model
+                        training techniques for prediction.
+
+                    </li>
+
+
+                </ul>
+
+
+                <div class="tech-stack">
+
+
+                    <span class="tech">
+                        Python
+                    </span>
+
+
+                    <span class="tech">
+                        TensorFlow
+                    </span>
+
+
+                    <span class="tech">
+                        Keras
+                    </span>
+
+
+                    <span class="tech">
+                        OpenCV
+                    </span>
+
+
+                    <span class="tech">
+                        NumPy
+                    </span>
+
+
+                    <span class="tech">
+                        Streamlit
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section class="experience"
+         id="experience">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                Experience
+            </h2>
+
+
+            <p>
+                Internship and professional learning experience
+            </p>
+
+
+        </div>
+
+
+
+        <div class="experience-card">
+
+
+            <h3>
+                Virtual Experience
+            </h3>
+
+
+            <div class="company">
+                Apex Data Analytics
+            </div>
+
+
+            <ul>
+
+
+                <li>
+                    Completed a virtual experience focused
+                    on Data Analytics.
+                </li>
+
+
+                <li>
+                    Gained practical exposure to data analysis
+                    concepts and analytical workflows.
+                </li>
+
+
+                <li>
+                    Applied analytical thinking to solve
+                    practical data-related problems.
+                </li>
+
+
+            </ul>
+
+
+            <br>
+
+
+            <h3>
+                Python Programming
+            </h3>
+
+
+            <div class="company">
+                VaultofCodes
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CERTIFICATIONS
+===================================================== -->
+
+<section class="certifications"
+         id="certifications">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                Certifications
+            </h2>
+
+
+            <p>
+                Professional learning and certifications
+            </p>
+
+
+        </div>
+
+
+
+        <div class="cert-grid">
+
+
+            <!-- CERTIFICATE 1 -->
+
+            <div class="cert-card">
+
+
+                <div class="cert-icon">
+                    PY
+                </div>
+
+
+                <div>
+
+
+                    <h4>
+                        Cisco Python Essentials 1 & 2
+                    </h4>
+
+
+                    <p>
+                        June 2026
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CERTIFICATE 2 -->
+
+            <div class="cert-card">
+
+
+                <div class="cert-icon">
+                    DA
+                </div>
+
+
+                <div>
+
+
+                    <h4>
+                        Deloitte Data Analytics Job Simulation
+                    </h4>
+
+
+                    <p>
+                        July 2025
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CERTIFICATE 3 -->
+
+            <div class="cert-card">
+
+
+                <div class="cert-icon">
+                    PY
+                </div>
+
+
+                <div>
+
+
+                    <h4>
+                        Python Programming
+                    </h4>
+
+
+                    <p>
+                        VaultofCodes
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact"
+         id="contact">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+
+            <h2>
+                Let's Connect
+            </h2>
+
+
+            <p>
+                Open to internships, projects and career opportunities
+            </p>
+
+
+        </div>
+
+
+
+        <div class="contact-box">
+
+
+            <p>
+
+                I am interested in opportunities related to
+                Data Analytics, Python, Artificial Intelligence
+                and Machine Learning. Feel free to connect with me.
+
+            </p>
+
+
+            <div class="contact-links">
+
+
+                <!-- EMAIL -->
+
+                <a href="mailto:seelamnenilavanya@gmail.com"
+                   class="contact-link">
+
+                    Email
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/seelamnenilavanya"
+                   target="_blank"
+                   class="contact-link">
+
+                    LinkedIn
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a href="https://github.com/Seelamneni-lavanya"
+                   target="_blank"
+                   class="contact-link">
+
+                    GitHub
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    © 2026 Seelamneni Lavanya. All Rights Reserved.
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCROLL TO TOP
+===================================================== -->
+
+<button id="topBtn"
+        onclick="scrollToTop()">
+
+    ↑
+
+</button>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+        navLinks.classList.toggle("active");
+
+    }
+
+
+
+    /* CLOSE MOBILE MENU */
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                () => {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList
+                        .remove("active");
+
+                }
+            );
+
+        });
+
+
+
+    /* SCROLL TOP BUTTON */
+
+    const topBtn =
+        document.getElementById("topBtn");
+
+
+    window.addEventListener(
+        "scroll",
+        () => {
+
+            if (window.scrollY > 400) {
+
+                topBtn.style.display = "block";
+
+            }
+
+            else {
+
+                topBtn.style.display = "none";
+
+            }
+
+        }
+    );
+
+
+
+    /* SCROLL TO TOP */
+
+    function scrollToTop() {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
